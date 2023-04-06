@@ -10,10 +10,10 @@
 # Exit on any failure
 set -e
 
-ibmint deploy --input-path . --output-work-directory /tmp/ace-submodule-subflowlib-level1-work-dir --project SubflowLibLevel1_ContractTest --project SubflowLibLevel1_ScaffoldApp
+ibmint deploy --input-path . --output-work-directory $HOME/ace-submodule-subflowlib-level1-work-dir --project SubflowLibLevel1_ContractTest --project SubflowLibLevel1_ScaffoldApp
 
 # ibmint optimize server new for v12.0.4 - speed up test runs
-ibmint optimize server --work-directory /tmp/ace-submodule-subflowlib-level1-work-dir --enable JVM --disable NodeJS
+ibmint optimize server --work-directory $HOME/ace-submodule-subflowlib-level1-work-dir --enable JVM --disable NodeJS
 
 # Run the server to run the contract tests
-IntegrationServer -w /tmp/ace-submodule-subflowlib-level1-work-dir --test-project SubflowLibLevel1_ContractTest
+IntegrationServer -w $HOME/ace-submodule-subflowlib-level1-work-dir --test-project SubflowLibLevel1_ContractTest

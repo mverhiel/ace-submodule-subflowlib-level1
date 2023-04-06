@@ -1,4 +1,4 @@
 [submodule "ace-submodule-javalib-level1"]
 	path = ace-submodule-javalib-level1
-	url = git@github.com:trevor-dolby-at-ibm-com/ace-submodule-javalib-level1.git
+	url = git@github.com:mverhiel/ace-submodule-javalib-level1.git
 	branch = main
